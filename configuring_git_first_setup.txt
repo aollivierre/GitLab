@@ -1,0 +1,90 @@
+
+The following is needed when committing changes in VS code via the Git Hub Pull Requests plugin  
+
+https://confluence.atlassian.com/bitbucket/configure-your-dvcs-username-for-commits-950301867.html
+
+
+
+1- open the native Github Bash
+2- copy paste the following commands
+
+git config --global user.email "abdullahollivierre@gmail.com"
+
+git config --global user.name "Abdullah Ollivierre"
+
+git config --global credential.helper wincred
+
+From <https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f> 
+
+
+git clone https://github.com/aollivierre/TempGit.git
+
+4b30420f30a5fd722504b11652d72b1a968fcc72 (personal access token can be used instead of password when doing GIT  tasks over HTTPS)
+
+
+
+git credential-wincred erase
+
+
+git push -u origin master
+
+From <https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f> 
+
+
+fatal: not a git repository (or any of the parent directories): .git
+
+
+Failed to watch ref 'c:\Users\Abdullah\Downloads\Everything-1.4.1.935.x64\TempGit\.git\refs\remotes\origin\master', is most likely packed.
+Error: ENOENT: no such file or directory, watch 'c:\Users\Abdullah\Downloads\Everything-1.4.1.935.x64\TempGit\.git\refs\remotes\origin\master'
+    at FSWatcher.start (internal/fs/watchers.js:165:26)
+    at Object.watch (fs.js:1270:11)
+    at Object.t.watch (c:\Program Files\Microsoft VS Code\resources\app\extensions\git\dist\main.js:1:591370)
+    at E.updateTransientWatchers (c:\Program Files\Microsoft VS Code\resources\app\extensions\git\dist\main.js:1:123066)
+    at l.fire (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:46:913)
+    at T.updateModelState (c:\Program Files\Microsoft VS Code\resources\app\extensions\git\dist\main.js:1:141851)
+
+
+git --version
+git status
+
+Git init 
+Git clone https://github.com/aollivierre/TempGit.git
+
+Git branch
+Git log
+Git fetch
+
+
+
+git add -A --
+git add -A
+git add README.md
+git commit -m "Edit README"
+git push -u origin master
+git push origin yourbranchname
+
+git remote show origin
+
+git config --get remote.origin.url
+
+From <https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr> 
+
+
+
+From <https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners> 
+
+
+
+From <https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f> 
+
+
+As a general workflow for Git here is what you need to do
+
+Git Status
+Git Fetch
+
+Git Add -A
+Git commit -m "TYPE YOUR COMMIT MESSAGE"
+Git Push -u origin master (or the name of your branch instead of master)
+
+
