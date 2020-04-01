@@ -8,9 +8,9 @@ https://confluence.atlassian.com/bitbucket/configure-your-dvcs-username-for-comm
 1- open the native Github Bash
 2- copy paste the following commands
 
-git config --global user.email "abdullahollivierre@gmail.com"
+git config --global user.email "[Enter your github email address here]"
 
-git config --global user.name "Abdullah Ollivierre"
+git config --global user.name "[Enter your first and last name]"
 
 git config --global credential.helper wincred
 
